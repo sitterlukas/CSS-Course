@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <header class="header">
@@ -79,12 +81,26 @@
           </div>
         </div>
       </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="content/img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img src="content/img/logos/business-insider.png" alt="BusinessInsider logo" />
+            <img src="content/img/logos/the-new-york-times.png" alt="the new york times logos" />
+            <img src="content/img/logos/forbes.png" alt="Forbes logo" />
+            <img src="content/img/logos/usa-today.png" alt="usa-today logo" />
+          </div>
+        </div>
+      </section>
+
       <section class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
         </div>
-        <div class="container grid grid--2-cols">
+        <div class="container grid grid--2-cols grid-center-v">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
@@ -109,6 +125,36 @@
           <div class="step-image-box">
             <img src="content/img/app/app-screen-3.png" class="step-image" alt="iPhone app"/>
           </div>
+        </div>
+      </section>
+      <section class="section-meals">
+        <div class="container">
+          <span class="subheading">Sample meals</span>
+          <h2 class="heading-secondary">Omnifood AI chooses from 5,000 recipes</h2>
+        </div>
+
+        <div class="container grid grid--3-cols">
+          <div class="meal">
+            <img class="meal-image" src="./content/img/meals/meal-1.jpg" alt="meal" />
+            <span class="tag">Vegetarian</span>
+            <p class="meal-title">Japanese Gyozas</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon name="flame-outline"></ion-icon>
+                <span>650 calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon name="restaurant-outline"></ion-icon>
+               <span>Nutriscore &reg; 74</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>4.9 rating (74)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="meal">Meals</div>
+          <div class="list">List of diets</div>
         </div>
       </section>
     </main>
