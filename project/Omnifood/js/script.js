@@ -11,21 +11,6 @@ btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 
-const allLinksEl = document.querySelectorAll("a:link");
-
-allLinksEl.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-  });
-});
-
 function checkFlexBox() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
